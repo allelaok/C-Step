@@ -5,6 +5,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 
 # Split
 '''c++
+
 vector<string> split(string input, char delimiter) {
     vector<string> answer;
     stringstream ss(input);
@@ -16,6 +17,7 @@ vector<string> split(string input, char delimiter) {
 
     return answer;
 }
+
 '''
 
 # Vector <string>
