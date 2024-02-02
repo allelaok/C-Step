@@ -4,7 +4,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 # getline()
 
 # Split
-'''c++
+```c++
 
 vector<string> split(string input, char delimiter) {
     vector<string> answer;
@@ -18,6 +18,6 @@ vector<string> split(string input, char delimiter) {
     return answer;
 }
 
-'''
+```
 
 # Vector <string>
