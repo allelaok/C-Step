@@ -1,3 +1,5 @@
+## 변수 초기화 해주기!!
+
 # [Bronze III] 최댓값 - 2566 
 
 [문제 링크](https://www.acmicpc.net/problem/2566) 
