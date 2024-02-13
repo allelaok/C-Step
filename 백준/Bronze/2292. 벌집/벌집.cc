@@ -1,18 +1,12 @@
 #include <iostream>
 using namespace std;
-
 int main() {
-    int n;
-    cin >> n;
-    int r = 1;
-    if (n != 1) {
-        while (true) {
-            r++;
-            if (n - 7 <= (3 * r + 3) * (r - 2)) {
-                break;
-            }
-        }
-    }
-    cout << r;
+    int number;
+    cin >> number;
+    int i = 0;
+    for(int sum=2; sum <= number; i++)
+        sum += 6*i;
+    if(number == 1) i=1;
+    cout << i;
     return 0;
 }
