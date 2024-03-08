@@ -1,24 +1,33 @@
+
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
- 
+
 public class Main {
+
 	public static void main(String[] args) {
- 
-		Scanner in = new Scanner(System.in);
- 
-		int[] counting = new int[10];
- 
-		int N = in.nextInt();
- 
-		while (N != 0) {
-			counting[N % 10]++;
-			N /= 10;
+
+		Scanner sc = new Scanner(System.in);
+
+		String str = sc.next();
+		int n = Integer.parseInt(str);
+
+		sc.close();
+
+		ArrayList<Integer> list = new ArrayList<Integer>();
+
+		while (n > 0) {
+			int tmp = n % 10;
+			list.add(tmp);
+			n /= 10;
 		}
- 
-		for (int i = 9; i >= 0; i--) {
-			while (counting[i]-- > 0) {
-				System.out.print(i);
-			}
+
+		list.sort(Collections.reverseOrder());
+
+		for (int i = 0; i < list.size(); i++) {
+			System.out.print(list.get(i));
 		}
- 
+
 	}
+
 }
